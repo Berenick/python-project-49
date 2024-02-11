@@ -18,7 +18,7 @@ def even_game():
             if game_log.ask_get_check_correct_answer(question_num, correct_answer) is True:
                 result_correct_answer += 1
             else:
-                result_correct_answer = 0
+                return 0
         print(f'Congratulations, {name}')
     
 
