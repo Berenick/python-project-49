@@ -8,7 +8,7 @@ def calc_game():
     result_correct_answer = 0
     operators = ['+', '-', '*']
     while result_correct_answer != 3:
-        question_sum = str(random.randint(-100, 100)) + random.choice(operators) + str(random.randint(-100, 100))
+        question_sum = str(random.randint(0, 100)) + random.choice(operators) + str(random.randint(0, 100))
         correct_answer = str(eval(question_sum))
         if game_log.ask_get_check_correct_answer(question_sum, correct_answer, name) is True:
             result_correct_answer += 1
