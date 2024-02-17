@@ -27,4 +27,4 @@ def prime_game():
             result_correct_answer += 1
         else:
             return 0
-    print(f'Congratulations, {name}')
+    print(f'Congratulations, {name}!')
