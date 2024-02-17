@@ -26,7 +26,7 @@ def progression_game():
     while result_correct_answer != 3:
         question_progression, correct_answer = make_correct_answer()
         question_progression = (' '.join(map(str, question_progression)))
-        if game_log.ask_get_check_correct_answer(question_progression, str(correct_answer,name)) is True:
+        if game_log.ask_get_check_correct_answer(question_progression, str(correct_answer), name) is True:
             result_correct_answer += 1
         else:
             return 0
