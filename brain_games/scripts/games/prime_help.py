@@ -3,7 +3,7 @@ import random
 import math
 
 
-def number_is_prime(num = int):
+def number_is_prime(num=int):
     if num == 1:
         return 'no'
     a = []
@@ -17,15 +17,14 @@ def number_is_prime(num = int):
 
 
 def prime_game():
-        name = game_log.say_hello()
-        print('Answer "yes" if given number is prime. Otherwise answer "no".')
-        result_correct_answer = 0
-        while result_correct_answer != 3:
-            question_num = random.randint(1, 5000)
-            correct_answer = number_is_prime(question_num)
-            if game_log.ask_get_check_correct_answer(question_num, correct_answer) is True:
-                result_correct_answer += 1
-            else:
-                return 0
-        print(f'Congratulations, {name}')
-
+    name = game_log.say_hello()
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    result_correct_answer = 0
+    while result_correct_answer != 3:
+        question_num = random.randint(1, 5000)
+        correct_answer = number_is_prime(question_num)
+        if game_log.ask_get_check_correct_answer(question_num, correct_answer) is True:
+            result_correct_answer += 1
+        else:
+            return 0
+    print(f'Congratulations, {name}')
