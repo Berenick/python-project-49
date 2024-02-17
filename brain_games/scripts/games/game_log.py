@@ -17,7 +17,7 @@ def pr_question(question):
     print(f'Question: {question}')
 
 
-def ask_get_check_correct_answer(question=str, correct_answer=str, name=str):
+def check_correct_answer(question=str, correct_answer=str, name=str):
     pr_question(question)
     answer = get_answer()
     if answer == correct_answer:
