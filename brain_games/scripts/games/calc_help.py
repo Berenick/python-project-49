@@ -8,12 +8,12 @@ def calc_game():
     result_correct_answer = 0
     operators = ['+', '-', '*']
     while result_correct_answer != 3:
-        first_rannum_of_exp = str(random.randint(-100, 100))
-        sec_rannum_of_exp = str(random.randint(-100, 100))
+        first_num_of_exp = str(random.randint(-100, 100))
+        sec_num_of_exp = str(random.randint(-100, 100))
         rand_oper = random.choice(operators)
-        question_sum = f'{first_rannum_of_exp} {rand_oper} {sec_rannum_of_exp}'
+        question_sum = f'{first_num_of_exp} {rand_oper} {sec_num_of_exp}'
         correct_answer = str(eval(question_sum))
-        if game_log.check_correct_answer(question_sum, correct_answer, name) is True:
+        if game_log.check_answer(question_sum, correct_answer, name) is True:
             result_correct_answer += 1
         else:
             return 0

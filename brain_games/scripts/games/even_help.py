@@ -16,7 +16,7 @@ def even_game():
     while result_correct_answer != 3:
         question_num = random.randint(0, 1000)
         correct_answer = answer_is_even(question_num)
-        if game_log.check_correct_answer(question_num, correct_answer, name) is True:
+        if game_log.check_answer(question_num, correct_answer, name) is True:
             result_correct_answer += 1
         else:
             return 0

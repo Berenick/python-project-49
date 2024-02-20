@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-import sys
-import os
-DIR_NAME = os.path.dirname(__file__)
-DIR_NAME += '/../'
-print(DIR_NAME)
-sys.path.append(DIR_NAME)
+from . import path_add
 import cli
 
 
 def main():
     cli.welcome_user()
+
+
+path_add.ignore_lint_401()
 
 
 if __name__ == '__main__':

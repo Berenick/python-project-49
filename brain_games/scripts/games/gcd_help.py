@@ -11,8 +11,8 @@ def gcd_game():
         rand_first = random.randint(0, 100)
         rand_sec = random.randint(0, 100)
         question_nums = f'{rand_first} {rand_sec}'
-        correct_answer = math.gcd(rand_first, rand_sec)
-        if game_log.check_correct_answer(question_nums, str(correct_answer), name) is True:
+        corr_answer = math.gcd(rand_first, rand_sec)
+        if game_log.check_answer(question_nums, str(corr_answer), name) is True:
             result_correct_answer += 1
         else:
             return 0

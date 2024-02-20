@@ -25,9 +25,9 @@ def progression_game():
     print('What number is missing in the progression?')
     result_correct_answer = 0
     while result_correct_answer != 3:
-        question_progression, correct_answer = make_correct_answer()
-        question_progression = (' '.join(map(str, question_progression)))
-        if game_log.check_correct_answer(question_progression, str(correct_answer), name) is True:
+        quest_progress, cor_answ = make_correct_answer()
+        quest_progress = (' '.join(map(str, quest_progress)))
+        if game_log.check_answer(quest_progress, str(cor_answ), name) is True:
             result_correct_answer += 1
         else:
             return 0
