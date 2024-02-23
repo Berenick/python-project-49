@@ -2,8 +2,7 @@
 [![Actions Status](https://github.com/Berenick/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Berenick/python-project-49/actions)
 <a href="https://codeclimate.com/github/Berenick/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/5fc9b2a4f617b78b6e60/maintainability" /></a>
 <h1>Описание:</h1>
-<a>Перед вами набор консольных математических игр, написанных на Python</a>
-<h1>Инструкция:</h1>
+Перед вами набор консольных математических игр, написанных на Python
 <h2>Установка пакета, для вывода дальнейших игр</h2>
 <a href="https://asciinema.org/a/7OpfCVZ8qBE8MOahxRZGZMOln" target="_blank"><img src="https://asciinema.org/a/7OpfCVZ8qBE8MOahxRZGZMOln.svg" /></a>
 <h2>Пример работы Игры четное-нечетное</h2>
