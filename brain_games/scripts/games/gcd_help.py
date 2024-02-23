@@ -3,17 +3,16 @@ from . import game_log
 import random
 
 
+GAME_TASK = 'Find the greatest common divisor of given numbers.'
+
+
+def generate():
+    rand_first = random.randint(0, 100)
+    rand_sec = random.randint(0, 100)
+    question = f'{rand_first} {rand_sec}'
+    answer = str(math.gcd(rand_first, rand_sec))
+    return question, answer
+
+
 def gcd_game():
-    name = game_log.say_hello()
-    print('Find the greatest common divisor of given numbers.')
-    result_correct_answer = 0
-    while result_correct_answer != 3:
-        rand_first = random.randint(0, 100)
-        rand_sec = random.randint(0, 100)
-        question_nums = f'{rand_first} {rand_sec}'
-        corr_answer = math.gcd(rand_first, rand_sec)
-        if game_log.check_answer(question_nums, str(corr_answer), name) is True:
-            result_correct_answer += 1
-        else:
-            return 0
-    print(f'Congratulations, {name}!')
+    game_log.start_game(GAME_TASK, generate)

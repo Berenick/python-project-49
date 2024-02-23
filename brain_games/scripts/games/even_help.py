@@ -2,22 +2,24 @@ import random
 from . import game_log
 
 
+GAME_TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def generate():
+    question = random.randint(0, 1000)
+    if answer_is_even(question):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return question, correct_answer
+
+
 def answer_is_even(num=int):
     if num % 2 == 0:
-        return 'yes'
+        return True
     else:
-        return 'no'
+        return False
 
 
 def even_game():
-    name = game_log.say_hello()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    result_correct_answer = 0
-    while result_correct_answer != 3:
-        question_num = random.randint(0, 1000)
-        correct_answer = answer_is_even(question_num)
-        if game_log.check_answer(question_num, correct_answer, name) is True:
-            result_correct_answer += 1
-        else:
-            return 0
-    print(f'Congratulations, {name}!')
+    game_log.start_game(GAME_TASK, generate)

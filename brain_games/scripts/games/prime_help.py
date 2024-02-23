@@ -3,6 +3,9 @@ import random
 import math
 
 
+GAME_TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def number_is_prime(num=int):
     if num == 1:
         return 'no'
@@ -11,20 +14,19 @@ def number_is_prime(num=int):
         a.append(i)
     for i in a:
         if i > math.sqrt(num):
-            return 'yes'
+            return True
         if num % i == 0:
-            return 'no'
+            return False
+
+
+def generate():
+    question = random.randint(1, 5000)
+    if number_is_prime(question):
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return question, answer
 
 
 def prime_game():
-    name = game_log.say_hello()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    result_correct_answer = 0
-    while result_correct_answer != 3:
-        question_num = random.randint(1, 5000)
-        correct_answer = number_is_prime(question_num)
-        if game_log.check_answer(question_num, correct_answer, name) is True:
-            result_correct_answer += 1
-        else:
-            return 0
-    print(f'Congratulations, {name}!')
+    game_log.start_game(GAME_TASK, generate)

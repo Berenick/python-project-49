@@ -8,18 +8,9 @@ def say_hello():
     return name
 
 
-def get_answer():
-    answer = prompt.string('Your answer: ')
-    return answer
-
-
-def pr_question(question):
-    print(f'Question: {question}')
-
-
 def check_answer(question=str, cor_answer=str, name=str):
-    pr_question(question)
-    answer = get_answer()
+    print(f'Question: {question}')
+    answer = prompt.string('Your answer: ')
     if answer == cor_answer:
         print('Correct!')
         return True
@@ -27,3 +18,14 @@ def check_answer(question=str, cor_answer=str, name=str):
         print(f'{answer} is wrong answer ;(. Correct answer was {cor_answer}')
         print(f"Let's try again, {name}!")
         return False
+
+
+def start_game(GAME_TASK, generate):
+    name = say_hello()
+    print(GAME_TASK)
+    for i in range(3):
+        question, answer = generate()
+        boolean = check_answer(question, answer, name)
+        if boolean is False:
+            exit()
+    print(f'Congratulations, {name}!')
