@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/Berenick/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Berenick/python-project-49/actions)
 <a href="https://codeclimate.com/github/Berenick/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/5fc9b2a4f617b78b6e60/maintainability" /></a>
 <p align="center">
-<img width="400" height="250" src="https://masterpiecer-images.s3.yandex.net/254cb5df6df211ee968b6a0259d7362a:upscaled">
+<img width="400" height="400" src="https://masterpiecer-images.s3.yandex.net/254cb5df6df211ee968b6a0259d7362a:upscaled">
 </p>
 
 ### Описание: </h1>
