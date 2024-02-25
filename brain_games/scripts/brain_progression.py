@@ -1,9 +1,9 @@
 from . import path_add
-from games import progression_help
+from brain_games.games import progression
 
 
 def main():
-    progression_help.progression_game()
+    progression.progression_game()
 
 
 if __name__ == '__main__':

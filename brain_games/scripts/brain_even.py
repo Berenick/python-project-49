@@ -1,9 +1,9 @@
 from . import path_add
-from games import even_help
+from brain_games.games import even
 
 
 def main():
-    even_help.even_game()
+    even.even_game()
 
 
 if __name__ == '__main__':

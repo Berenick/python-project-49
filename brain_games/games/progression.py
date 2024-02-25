@@ -1,5 +1,5 @@
 import random
-from . import game_log
+import game_log
 
 
 GAME_TASK = 'What number is missing in the progression?'
@@ -8,10 +8,7 @@ GAME_TASK = 'What number is missing in the progression?'
 def create_progression():
     step = random.randint(1, 7)
     start = random.randint(1, 50)
-    progression = [start]
-    for i in range(10):
-        start = start + step
-        progression.append(start)
+    progression = list(range(start, start + step * 10, step))
     return progression
 
 
@@ -24,8 +21,11 @@ def make_correct_answer():
 
 
 def generate():
-    quest_progress, answer = make_correct_answer()
-    question = (' '.join(map(str, quest_progress)))
+    question = create_progression()
+    index = random.randint(0, 9)
+    answer = str(question[index])
+    question[index] = ".."
+    question = (' '.join(map(str, question)))
     return question, answer
 
 

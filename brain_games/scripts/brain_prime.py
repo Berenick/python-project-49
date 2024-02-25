@@ -1,9 +1,9 @@
 from . import path_add
-from games import prime_help
+from brain_games.games import prime
 
 
 def main():
-    prime_help.prime_game()
+    prime.prime_game()
 
 
 if __name__ == '__main__':

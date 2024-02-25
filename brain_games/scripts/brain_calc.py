@@ -1,9 +1,9 @@
 from . import path_add
-from games import  calc_help
+from brain_games.games import  calc
 
 
 def main():
-    calc_help.calc_game()
+    calc.calc_game()
 
 
 if __name__ == '__main__':

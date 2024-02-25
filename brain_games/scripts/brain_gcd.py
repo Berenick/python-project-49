@@ -1,9 +1,9 @@
 from . import path_add
-from games import gcd_help
+from brain_games.games import gcd
 
 
 def main():
-    gcd_help.gcd_game()
+    gcd.gcd_game()
 
 
 if __name__ == '__main__':

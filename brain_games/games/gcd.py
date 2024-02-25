@@ -1,5 +1,5 @@
 import math
-from . import game_log
+import game_log
 import random
 
 

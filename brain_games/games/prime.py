@@ -1,4 +1,4 @@
-from . import game_log
+import game_log
 import random
 import math
 
@@ -6,9 +6,9 @@ import math
 GAME_TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def number_is_prime(num=int):
+def is_prime(num=int):
     if num == 1:
-        return 'no'
+        return 'False'
     a = []
     for i in range(2, num + 1):
         a.append(i)
@@ -21,7 +21,7 @@ def number_is_prime(num=int):
 
 def generate():
     question = random.randint(1, 5000)
-    if number_is_prime(question):
+    if is_prime(question):
         answer = 'yes'
     else:
         answer = 'no'
