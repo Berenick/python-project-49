@@ -1,4 +1,5 @@
-from .games import gcd_help
+from . import path_add
+from games import gcd_help
 
 
 def main():

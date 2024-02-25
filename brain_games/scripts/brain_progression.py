@@ -1,4 +1,5 @@
-from .games import progression_help
+from . import path_add
+from games import progression_help
 
 
 def main():

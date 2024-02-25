@@ -1,4 +1,5 @@
-from .games import prime_help
+from . import path_add
+from games import prime_help
 
 
 def main():
