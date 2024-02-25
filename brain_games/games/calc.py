@@ -8,7 +8,7 @@ GAME_TASK = 'What is the result of the expression?'
 def generate():
     operators = ['+', '-', '*']
     first_num = random.randint(-100, 100)
-    sec_num= random.randint(-100, 100)
+    sec_num = random.randint(-100, 100)
     rand_oper = random.choice(operators)
     question = f'{first_num} {rand_oper} {sec_num}'
     match rand_oper:
