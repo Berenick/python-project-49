@@ -14,7 +14,6 @@ def is_prime(num=int):
         if num % elem == 0:
             return False
     return True
-    
 
 
 def generate_q_a():
