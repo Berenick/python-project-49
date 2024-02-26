@@ -1,9 +1,10 @@
 from . import path_add
-from brain_games.games import even
+import engine
+from games import even
 
 
 def main():
-    even.even_game()
+    engine.start_game(even)
 
 
 path_add.ignore_lint_401()

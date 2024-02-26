@@ -1,9 +1,10 @@
 from . import path_add
-from brain_games.games import prime
+import engine
+from games import prime
 
 
 def main():
-    prime.prime_game()
+    engine.start_game(prime)
 
 
 path_add.ignore_lint_401()

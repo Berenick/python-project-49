@@ -1,9 +1,10 @@
 from . import path_add
-from brain_games.games import calc
+import engine
+from games import calc
 
 
 def main():
-    calc.calc_game()
+    engine.start_game(calc)
 
 
 path_add.ignore_lint_401()

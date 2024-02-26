@@ -1,9 +1,10 @@
 from . import path_add
-from brain_games.games import progression
+import engine
+from games import progression
 
 
 def main():
-    progression.progression_game()
+    engine.start_game(progression)
 
 
 path_add.ignore_lint_401()

@@ -1,5 +1,4 @@
 import random
-import game_log
 
 
 GAME_TASK = 'What number is missing in the progression?'
@@ -20,14 +19,10 @@ def make_correct_answer():
     return progression_complete, result
 
 
-def generate():
+def generate_q_a():
     question = create_progression()
     index = random.randint(0, 9)
     answer = str(question[index])
     question[index] = ".."
     question = (' '.join(map(str, question)))
     return question, answer
-
-
-def progression_game():
-    game_log.start_game(GAME_TASK, generate)
