@@ -6,13 +6,15 @@ GAME_TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num=int):
-    if num == 1:
+    if num <= 1:
         return False
-    for i in range(2, math.sqrt(num)):
-        if num % i == 0:
+    num_sqrt = int(math.sqrt(num))
+    divisors = range(2, num_sqrt + 1)
+    for elem in divisors:
+        if num % elem == 0:
             return False
-        else:
-            return True
+    return True
+    
 
 
 def generate_q_a():
