@@ -16,7 +16,7 @@ def is_prime(num=int):
     return True
 
 
-def generate_q_a():
+def generate_round_data():
     question = random.randint(1, 5000)
     if is_prime(question):
         answer = 'yes'

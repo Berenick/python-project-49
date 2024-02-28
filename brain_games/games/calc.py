@@ -4,7 +4,7 @@ import random
 GAME_TASK = 'What is the result of the expression?'
 
 
-def generate_q_a():
+def generate_round_data():
     operators = ['+', '-', '*']
     first_num = random.randint(-100, 100)
     second_num = random.randint(-100, 100)
