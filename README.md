@@ -9,19 +9,19 @@
 Перед вами набор консольных математических игр, написанных на Python
 
 ### Установка пакета, для вывода дальнейших игр.
-<a href="https://asciinema.org/a/7OpfCVZ8qBE8MOahxRZGZMOln" target="_blank"><img src="https://asciinema.org/a/7OpfCVZ8qBE8MOahxRZGZMOln.svg" /></a>
+<a href="https://asciinema.org/a/MakhdZVrdaV1wpaH7pC9L5zkD" target="_blank"><img src="https://asciinema.org/a/MakhdZVrdaV1wpaH7pC9L5zkD.svg" /></a>
 
 ### Пример работы Игры четное-нечетное.
-<a href="https://asciinema.org/a/D9Q6XcUv5eKY4e0dTKfPVtN5S" target="_blank"><img src="https://asciinema.org/a/D9Q6XcUv5eKY4e0dTKfPVtN5S.svg" /></a>
+<a href="https://asciinema.org/a/8RVKOKb028CPMVsyOfzRqD8Pe" target="_blank"><img src="https://asciinema.org/a/8RVKOKb028CPMVsyOfzRqD8Pe.svg" /></a>
 
 ### Пример работы Игры калькулятор.
-<a href="https://asciinema.org/a/ot4SrRTtHiXeMJ19n6iRUp4i5" target="_blank"><img src="https://asciinema.org/a/ot4SrRTtHiXeMJ19n6iRUp4i5.svg" /></a>
+<a href="https://asciinema.org/a/N8LpRjETrYAUixtHGtF8qx5ny" target="_blank"><img src="https://asciinema.org/a/N8LpRjETrYAUixtHGtF8qx5ny.svg" /></a>
 
 ### Пример работы игры НОД - наибольший общий делитель.
-<a href="https://asciinema.org/a/bq0tSC1iQmwCurZlt6uXOEiKA" target="_blank"><img src="https://asciinema.org/a/bq0tSC1iQmwCurZlt6uXOEiKA.svg" /></a>
+<a href="https://asciinema.org/a/99uLL6o8sDnZpL8dEBjz7QKns" target="_blank"><img src="https://asciinema.org/a/99uLL6o8sDnZpL8dEBjz7QKns.svg" /></a>
 
 ### Пример работы игры арифмитическая прогрессия, задача - найти пропущенный элемент прогрессии.
-<a href="https://asciinema.org/a/LrfiBBfA59h4TQ9YYFg1mCQXC" target="_blank"><img src="https://asciinema.org/a/LrfiBBfA59h4TQ9YYFg1mCQXC.svg" /></a>
+<a href="https://asciinema.org/a/gsbwR6cLO1aNE6LIJ6IdNphF5" target="_blank"><img src="https://asciinema.org/a/gsbwR6cLO1aNE6LIJ6IdNphF5.svg" /></a>
 
 ### Пример работы игры простое число или нет?
-<a href="https://asciinema.org/a/hoNGDxmKSwDMmdE1uTBT9SLg9" target="_blank"><img src="https://asciinema.org/a/hoNGDxmKSwDMmdE1uTBT9SLg9.svg" /></a>
+<a href="https://asciinema.org/a/yNeAPC60DljsdppxBxTLHTDi9" target="_blank"><img src="https://asciinema.org/a/yNeAPC60DljsdppxBxTLHTDi9.svg" /></a>

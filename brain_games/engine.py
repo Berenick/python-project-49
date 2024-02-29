@@ -1,7 +1,7 @@
 import prompt
 
 
-GAME_ROUNDS = 3
+ROUNDS_COUNT = 3
 
 
 def start_game(game):
@@ -9,7 +9,7 @@ def start_game(game):
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(game.GAME_TASK)
-    for i in range(GAME_ROUNDS):
+    for i in range(ROUNDS_COUNT):
         question, correct_answer = game.generate_round_data()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
@@ -19,6 +19,6 @@ def start_game(game):
             print(f'{answer} is wrong answer ;(.'
                   f'Correct answer was {correct_answer}')
             print(f"Let's try again, {name}!")
-            exit()
+            break
     else:
         print(f'Congratulations, {name}!')
